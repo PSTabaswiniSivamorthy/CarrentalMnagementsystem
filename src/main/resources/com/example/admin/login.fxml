@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.admin.logincontroller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="2.0" prefHeight="450.0" prefWidth="361.0" styleClass="left-form" stylesheets="@../../../stylesheets/loginDesign.css">
+               <children>
+                  <ImageView fitHeight="262.0" fitWidth="361.0" layoutX="-1.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@../../../images/carback.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="main_form" layoutX="361.0" prefHeight="452.0" prefWidth="346.0" styleClass="right-form" stylesheets="@../../../stylesheets/loginDesign.css">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="135.0" layoutY="75.0">
+                     <image>
+                        <Image url="@../../../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="142.0" layoutY="138.0" prefHeight="25.0" prefWidth="65.0" text="Sign In" textFill="#304d45">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="30.0" layoutY="196.0" prefHeight="36.0" prefWidth="285.0" promptText="Username" styleClass="textfield" stylesheets="@../../../stylesheets/loginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="32.0" layoutY="259.0" prefHeight="36.0" prefWidth="285.0" promptText="Password" styleClass="textfield" stylesheets="@../../../stylesheets/loginDesign.css" />
+                  <Button fx:id="loginBtn" layoutX="102.0" layoutY="324.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="42.0" prefWidth="147.0" styleClass="login-btn" stylesheets="@../../../stylesheets/loginDesign.css" text="Login" />
+                  <Button fx:id="close" layoutX="275.0" layoutY="14.0" mnemonicParsing="false" onDragDetected="#close" prefHeight="25.0" prefWidth="45.0" text="Close" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
